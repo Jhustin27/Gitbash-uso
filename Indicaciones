@@ -1,0 +1,47 @@
+Utilizar git
+
+paso 1: te vas a github o gitlab en tu archivo nuevo y buscas en "clone or download"
+copias el url que te muestra alli.
+
+paso 2: ubicate en tu archivo local de la pc que quieres subir al git.
+
+paso3: haz click derecho y presiona "git bash here"
+
+paso 4: se abrira una terminal de gitbash, donde colocaras los comandos git clone + el url 
+asi: git clone url......
+
+paso 5: dentro de tu archivo local, se creara automaticamente una carpeta git.
+en la cual debes copiar todos los archivos que quieres subir y los pegas en la carpeta.
+
+paso 6: entramos a nuestra carpeta creada a traves de la terminal del git.
+cd "nombre de la carpeta"/
+
+paso 7: digita (ls), para confirmar los documentos que estan dentro de la carpeta.
+
+paso 8: digita (git add -A) "-A = all" para agregar todos los archivos de la carpeta o
+digita (git add "nombre de carpeta u archivo especifico") si quieras subir archivos 
+por separado.
+
+paso 9: digita (git status) para ver las carpetas cargadas para subirse.
+
+paso 10: creas una copia de lo realizado mediante un commit, digita:
+git commit -m "*"  ,donde * puede ser lo que quieras por ejemplo Initial Commit de esta forma:
+git commit -m "Initial Commit"
+
+paso 11 (opcional): si digitas el comando (git log), nos mostrara todos los commit realizados con 
+ese repositorio.
+
+paso 12: Comandos
+git pull (descarga todos los cambios realizados en el repositorio)
+git push(sube todos los nuevos cambios que quieres agregar al repositorio).
+
+Posibles errores al hacer push:
+digita este comando (git push origin master) o simplemente haz git pull y luego haces nuevamente 
+git push. 
+
+paso 13: te vas a gitlab o github y refresca la pagina del repositorio y alli veras todos
+tus nuevos documentos subidos.
+
+**Si llegas a tener un error con tu usuario: 
+Prueba primero colocando git config --global user.name "Your Name" y luego 
+git config --global user.email "you@example.com"
